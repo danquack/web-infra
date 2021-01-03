@@ -14,10 +14,6 @@ exports.handler = (event, context, callback) => {
         key: 'X-Content-Type-Options',
         value: 'nosniff'
     }];
-    headers['x-frame-options'] = [{
-        key: 'X-Frame-Options',
-        value: 'DENY'
-    }];
     headers['x-xss-protection'] = [{
         key: 'X-XSS-Protection',
         value: '1; mode=block'
